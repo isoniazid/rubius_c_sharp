@@ -1,0 +1,15 @@
+D:\Development\c_sharp\rubius_c_sharp\hello_sharp\obj\Debug\net7.0\hello_sharp.csproj.AssemblyReference.cache
+D:\Development\c_sharp\rubius_c_sharp\hello_sharp\obj\Debug\net7.0\hello_sharp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Development\c_sharp\rubius_c_sharp\hello_sharp\obj\Debug\net7.0\hello_sharp.AssemblyInfoInputs.cache
+D:\Development\c_sharp\rubius_c_sharp\hello_sharp\obj\Debug\net7.0\hello_sharp.AssemblyInfo.cs
+D:\Development\c_sharp\rubius_c_sharp\hello_sharp\obj\Debug\net7.0\hello_sharp.csproj.CoreCompileInputs.cache
+D:\Development\c_sharp\rubius_c_sharp\hello_sharp\bin\Debug\net7.0\hello_sharp.exe
+D:\Development\c_sharp\rubius_c_sharp\hello_sharp\bin\Debug\net7.0\hello_sharp.deps.json
+D:\Development\c_sharp\rubius_c_sharp\hello_sharp\bin\Debug\net7.0\hello_sharp.runtimeconfig.json
+D:\Development\c_sharp\rubius_c_sharp\hello_sharp\bin\Debug\net7.0\hello_sharp.dll
+D:\Development\c_sharp\rubius_c_sharp\hello_sharp\bin\Debug\net7.0\hello_sharp.pdb
+D:\Development\c_sharp\rubius_c_sharp\hello_sharp\obj\Debug\net7.0\hello_sharp.dll
+D:\Development\c_sharp\rubius_c_sharp\hello_sharp\obj\Debug\net7.0\refint\hello_sharp.dll
+D:\Development\c_sharp\rubius_c_sharp\hello_sharp\obj\Debug\net7.0\hello_sharp.pdb
+D:\Development\c_sharp\rubius_c_sharp\hello_sharp\obj\Debug\net7.0\hello_sharp.genruntimeconfig.cache
+D:\Development\c_sharp\rubius_c_sharp\hello_sharp\obj\Debug\net7.0\ref\hello_sharp.dll

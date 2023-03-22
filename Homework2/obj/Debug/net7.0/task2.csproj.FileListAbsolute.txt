@@ -1,0 +1,15 @@
+D:\Development\c_sharp\rubius_c_sharp\Homework2\bin\Debug\net7.0\task2.exe
+D:\Development\c_sharp\rubius_c_sharp\Homework2\bin\Debug\net7.0\task2.deps.json
+D:\Development\c_sharp\rubius_c_sharp\Homework2\bin\Debug\net7.0\task2.runtimeconfig.json
+D:\Development\c_sharp\rubius_c_sharp\Homework2\bin\Debug\net7.0\task2.dll
+D:\Development\c_sharp\rubius_c_sharp\Homework2\bin\Debug\net7.0\task2.pdb
+D:\Development\c_sharp\rubius_c_sharp\Homework2\obj\Debug\net7.0\task2.csproj.AssemblyReference.cache
+D:\Development\c_sharp\rubius_c_sharp\Homework2\obj\Debug\net7.0\task2.GeneratedMSBuildEditorConfig.editorconfig
+D:\Development\c_sharp\rubius_c_sharp\Homework2\obj\Debug\net7.0\task2.AssemblyInfoInputs.cache
+D:\Development\c_sharp\rubius_c_sharp\Homework2\obj\Debug\net7.0\task2.AssemblyInfo.cs
+D:\Development\c_sharp\rubius_c_sharp\Homework2\obj\Debug\net7.0\task2.csproj.CoreCompileInputs.cache
+D:\Development\c_sharp\rubius_c_sharp\Homework2\obj\Debug\net7.0\task2.dll
+D:\Development\c_sharp\rubius_c_sharp\Homework2\obj\Debug\net7.0\refint\task2.dll
+D:\Development\c_sharp\rubius_c_sharp\Homework2\obj\Debug\net7.0\task2.pdb
+D:\Development\c_sharp\rubius_c_sharp\Homework2\obj\Debug\net7.0\task2.genruntimeconfig.cache
+D:\Development\c_sharp\rubius_c_sharp\Homework2\obj\Debug\net7.0\ref\task2.dll

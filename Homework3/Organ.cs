@@ -1,4 +1,4 @@
-public static class ORGAN_STATES 
+public static class ORGAN_STATES
 /*
 Чтобы в программе не было магических чисел 
 (в данном случае, магических булевых переменных), и другой программист,
@@ -16,7 +16,7 @@ public static class ORGAN_STATES
 public abstract class Organ
 {
     public Organ()
-    {}
+    { }
     public string name = "";
     public bool state = ORGAN_STATES.HEALTHY;
 
@@ -24,29 +24,29 @@ public abstract class Organ
 
 public class Heart : Organ
 {
-   public Heart(){name = "Сердце";}
+    public Heart() { name = "Сердце"; }
 }
 public class Liver : Organ
 {
-   public Liver(){name = "Печень";}
+    public Liver() { name = "Печень"; }
 }
 
 public class Kidney : Organ
 {
-   public Kidney(){ name = "Почка";}
+    public Kidney() { name = "Почка"; }
 }
 
 public class Mentality : Organ
 {
-   public Mentality() {name = "Психика";}
+    public Mentality() { name = "Психика"; }
 }
 
 public class Gaster : Organ
 {
-   public Gaster() {name = "Желудок";}
+    public Gaster() { name = "Желудок"; }
 }
 
 public class Intestine : Organ
 {
-   public Intestine() {name = "Кишечник";}
+    public Intestine() { name = "Кишечник"; }
 }

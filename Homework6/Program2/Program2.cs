@@ -1,4 +1,4 @@
-/* class Program2
+class Program2
 {
     public static List<(string name, DateTime creationTime, string type)> Parse(string str)
     {
@@ -24,7 +24,7 @@
         return result;
     }
 
-    public static void Main()
+    public static async Task Main()
     {
 
         try
@@ -34,10 +34,10 @@
             var currentFM = new FileManager();
 
             Console.WriteLine("Читаю файл с путем...");
-            string pathToCSV = currentFM.Read(pathToFileWithPath);
+            string pathToCSV = await currentFM.Read(pathToFileWithPath);
 
             Console.WriteLine("Читаю файл со списком...");
-            string filesListRaw = currentFM.Read(pathToCSV);
+            string filesListRaw = await currentFM.Read(pathToCSV);
             var filesList = Parse(filesListRaw);
             foreach (var element in filesList) Console.WriteLine(element);
 
@@ -54,4 +54,4 @@
         }
 
     }
-} */
+}

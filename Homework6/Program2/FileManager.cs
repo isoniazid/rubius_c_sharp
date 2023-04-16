@@ -5,7 +5,7 @@ public class FileManager
     Exception noPathException = new Exception("Путь не указан");
 
 
-    public string Unpack(string? path, string? destinationPath = null) //По умолчанию распакует в папку с программой
+    public async Task<string> Unpack(string? path, string? destinationPath = null) //По умолчанию распакует в папку с программой
     {
         if (destinationPath == null) destinationPath = Directory.GetCurrentDirectory();
         if (path == null) throw (noPathException);
@@ -15,7 +15,7 @@ public class FileManager
         {
             try
             {
-                ZipFile.ExtractToDirectory(path, destinationPath);
+                await Task.Run(() => ZipFile.ExtractToDirectory(path, destinationPath));
                 return "Архив распакован";
             }
 
@@ -33,16 +33,33 @@ public class FileManager
         }
     }
 
-    public string Read(string? path)
+    public async Task<string> Read(string? path)
     {
+        var StrResult = new System.Text.StringBuilder();
+        char[] result;
         if (path == null) throw (noPathException);
 
-        if (File.Exists(path)) return File.ReadAllText(path);
+
+        if (File.Exists(path))
+        {
+            using (StreamReader reader = File.OpenText(path))
+            {
+                result = new char[reader.BaseStream.Length];
+                await reader.ReadAsync(result, 0, (int)reader.BaseStream.Length);
+            }
+
+            foreach(var ch in result)
+            {
+                StrResult.Append(ch);
+            }
+
+            return StrResult.ToString();
+        }
 
         else throw (new Exception($"Невозможно прочитать данные из файла {path}"));
     }
 
-    public string[] Observe(string? path)
+    public async Task<string[]> Observe(string? path)
     {
         if (path == null) throw (noPathException);
 
@@ -66,7 +83,7 @@ public class FileManager
             }
             result.AddRange(filesList);
 
-
+            await Task.Delay(0); //Тут без комментариев)0)))
             return result.ToArray();
         }
 
@@ -76,15 +93,16 @@ public class FileManager
         }
     }
 
-    public string MakeFile(string? path)
+    public async Task<string> MakeFile(string? path)
     {
         if (path == null) throw (noPathException);
 
         try
         {
-            var currentFile = File.Create(path);
-            currentFile.Close();
-            return Path.GetFullPath(path);
+            await using FileStream currentFileStream = new FileStream(path, FileMode.CreateNew);
+            await using var currentStreamWriter = new StreamWriter(currentFileStream);
+            await currentStreamWriter.WriteAsync("");
+            return "Файл создан";
         }
 
         catch
@@ -93,11 +111,16 @@ public class FileManager
         }
     }
 
-    public void WriteToFile(string? path, string data)
+    public async Task WriteToFile(string? path, string data)
     {
         if (path == null) throw (noPathException);
 
-        if (File.Exists(path)) File.WriteAllText(path, data);
+        if (File.Exists(path))
+        {
+            await using FileStream currentFileStream = new FileStream(path, FileMode.Open);
+            await using var currentStreamWriter = new StreamWriter(currentFileStream);
+            await currentStreamWriter.WriteAsync(data);
+        }
 
         else throw (new Exception($"Запись в несуществующий файл {path}"));
     }
